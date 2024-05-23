@@ -30,8 +30,8 @@ monitor_mode = 'max'
 save_top_k = 1
 save_last = True
 check_val_every_n_epoch = 1
-#pretrained_ckpt_path = "/usr/local/GeoSeg/pretrain_weights/uavid/unetformer-r18-1024-768crop-e40/last.ckpt" # the path for the pretrained model weight
-pretrained_ckpt_path = "C:/Users/AmirHossein/Desktop/Project - GeoSeg/RS-GeoSeg/model_weights/uavid/unetformer-r18-1024-768crop-30e/last.ckpt" # the path for the pretrained model weight
+pretrained_ckpt_path = "/usr/local/GeoSeg/pretrain_weights/uavid/unetformer-r18-1024-768crop-30e/last.ckpt" # the path for the pretrained model weight
+# pretrained_ckpt_path = "C:/Users/AmirHossein/Desktop/Project - GeoSeg/RS-GeoSeg/model_weights/uavid/unetformer-r18-1024-768crop-30e/last.ckpt" # the path for the pretrained model weight
 gpus = 'auto'  # default or gpu ids:[0] or gpu nums: 2, more setting can refer to pytorch_lightning
 resume_ckpt_path = None  # whether continue training with the checkpoint, default None
 
