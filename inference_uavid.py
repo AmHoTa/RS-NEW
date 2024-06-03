@@ -62,13 +62,11 @@ def uavid2rgb(mask):
     mask_rgb[np.all(mask_convert == 1, axis=0)] = [128, 64, 128]
     mask_rgb[np.all(mask_convert == 2, axis=0)] = [0, 128, 0]
     mask_rgb[np.all(mask_convert == 3, axis=0)] = [128, 128, 0]
-    mask_rgb[np.all(mask_convert == 4, axis=0)] = [64, 0, 128]
-    mask_rgb[np.all(mask_convert == 5, axis=0)] = [192, 0, 192]
-    mask_rgb[np.all(mask_convert == 6, axis=0)] = [64, 64, 0]
-    mask_rgb[np.all(mask_convert == 7, axis=0)] = [0, 0, 0]
-    mask_rgb[np.all(mask_convert == 8, axis=0)] = [144, 19, 254]
-    mask_rgb[np.all(mask_convert == 9, axis=0)] = [80, 227, 194]
-    mask_rgb[np.all(mask_convert == 10, axis=0)] = [74, 144, 226]
+    mask_rgb[np.all(mask_convert == 4, axis=0)] = [192, 0, 192]
+    mask_rgb[np.all(mask_convert == 5, axis=0)] = [0, 0, 128]
+    mask_rgb[np.all(mask_convert == 6, axis=0)] = [128, 64, 32]
+    mask_rgb[np.all(mask_convert == 7, axis=0)] = [64, 128, 128]
+    mask_rgb[np.all(mask_convert == 8, axis=0)] = [0, 0, 0]
     mask_rgb = cv2.cvtColor(mask_rgb, cv2.COLOR_RGB2BGR)
     return mask_rgb
 

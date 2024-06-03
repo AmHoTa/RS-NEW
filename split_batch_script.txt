@@ -1,0 +1,7 @@
+python tools/uavid_patch_split.py --input-dir "C:\Users\AmirHossein\Desktop\Project-GeoSeg\RS-GeoSeg\data\uavid\uavid_train" --output-img-dir "C:\Users\AmirHossein\Desktop\Project-GeoSeg\RS-GeoSeg\data\uavid\train_val\images" --output-mask-dir "C:\Users\AmirHossein\Desktop\Project-GeoSeg\RS-GeoSeg\data\uavid\train_val\masks" --mode 'train' --split-size-h 1024 --split-size-w 1024 --stride-h 1024 --stride-w 1024
+
+
+python tools/uavid_patch_split.py --input-dir "C:\Users\AmirHossein\Desktop\Project-GeoSeg\RS-GeoSeg\data\uavid\uavid_train" --output-img-dir "C:\Users\AmirHossein\Desktop\Project-GeoSeg\RS-GeoSeg\data\uavid\train\images" --output-mask-dir "C:\Users\AmirHossein\Desktop\Project-GeoSeg\RS-GeoSeg\data\uavid\train\masks" --mode 'train' --split-size-h 1024 --split-size-w 1024 --stride-h 1024 --stride-w 1024
+
+
+python tools/uavid_patch_split.py --input-dir "C:\Users\AmirHossein\Desktop\Project-GeoSeg\RS-GeoSeg\data\uavid\uavid_val" --output-img-dir "C:\Users\AmirHossein\Desktop\Project-GeoSeg\RS-GeoSeg\data\uavid\val\images" --output-mask-dir "C:\Users\AmirHossein\Desktop\Project-GeoSeg\RS-GeoSeg\data\uavid\val\masks" --mode 'train' --split-size-h 1024 --split-size-w 1024 --stride-h 1024 --stride-w 1024

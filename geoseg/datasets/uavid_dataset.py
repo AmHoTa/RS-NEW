@@ -12,13 +12,14 @@ from PIL import Image
 import random
 from .transform import *
 
-CLASSES = ('Building', 'Road', 'Tree', 'LowVeg', 'Moving_Car',  'Static_Car', 'Human', 'Clutter', 'Pool', 'Truck', 'Wall')
-PALETTE = [[128, 0, 0], [128, 64, 128], [0, 128, 0], [128, 128, 0], [64, 0, 128], [192, 0, 192], [64, 64, 0], [0, 0, 0], [144, 19, 254], [80, 227, 194], [74, 144, 226]]
+CLASSES = ('Building',   'Road',      'Tree',    'LowVeg',     'Car',     'Wall',    'Truck',      'Pool',   'Clutter')
+PALETTE = [[128,0,0], [128,64,128], [0,128,0], [128,128,0], [192,0,192], [0,0,128], [128,64,32], [64,128,128], [0,0,0]]
 
 ORIGIN_IMG_SIZE = (1024, 1024)
 INPUT_IMG_SIZE = (1024, 1024)
 TEST_IMG_SIZE = (1024, 1024)
 
+print(f"in uavid_Dataset.py file: (Debugging)", len(CLASSES), CLASSES)
 
 def get_training_transform():
     train_transform = [
