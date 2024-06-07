@@ -42,7 +42,7 @@ def py2dict(file_path: Union[str, Path]) -> dict:
     
     # file_path = Path(file_path).absolute()                @Changed
 
-    file_path = Path("C:/Users/AmirHossein/Desktop/Project - GeoSeg/RS-GeoSeg/config/uavid/unetformer.py")
+    file_path = Path("/usr/local/GeoSeg/config/uavid/unetformer.py")
 
     if file_path.suffix != ".py":
         raise TypeError(f"Only Py file can be parsed, but got {file_path.name} instead.")

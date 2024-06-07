@@ -23,7 +23,7 @@ classes = CLASSES
 
 
 
-weights_name = "from_scratch_40e"
+weights_name = "NewModel"
 weights_path = "model_weights/uavid/{}".format(weights_name)
 test_weights_name = "last"
 log_name = 'uavid/{}'.format(weights_name)
@@ -32,7 +32,7 @@ monitor_mode = 'max'
 save_top_k = 1
 save_last = True
 check_val_every_n_epoch = 1
-pretrained_ckpt_path = "/usr/local/GeoSeg/pretrain_weights/uavid/from_scratch_40e/from_scratch_40e.ckpt" # the path for the pretrained model weight
+pretrained_ckpt_path = "/usr/local/GeoSeg/pretrain_weights/uavid/NewModel/NewModel.ckpt"     # the path for the pretrained model weight
 # pretrained_ckpt_path = "C:/Users/AmirHossein/Desktop/Project - GeoSeg/RS-GeoSeg/model_weights/uavid/unetformer-r18-1024-768crop-30e/last.ckpt" # the path for the pretrained model weight
 gpus = 'auto'  # default or gpu ids:[0] or gpu nums: 2, more setting can refer to pytorch_lightning
 resume_ckpt_path = None # "/usr/local/GeoSeg/pretrain_weights/uavid/unetformer-r18-1024-768crop-30e/last.ckpt"  # whether continue training with the checkpoint, default None
@@ -46,7 +46,7 @@ use_aux_loss = True
 
 # define the dataloader
 
-train_dataset = UAVIDDataset(data_root='data/uavid/train_val', img_dir='images', mask_dir='masks',
+train_dataset = UAVIDDataset(data_root='data/uavid/train', img_dir='images', mask_dir='masks',
                              mode='train', mosaic_ratio=0.25, transform=train_aug, img_size=(1024, 1024))
 
 val_dataset = UAVIDDataset(data_root='data/uavid/val', img_dir='images', mask_dir='masks', mode='val',
