@@ -1,0 +1,9 @@
+Building                  [128,0,0]			0
+Road                      [128,64,128]			1
+Tree                      [0,128,0]			2
+Low Vegetation            [128,128,0]			3
+Car                       [192,0,192]			4
+Wall			  [0,0,128]			5
+Truck			  [128,64,32]			6
+Pool			  [64,128,128]			7
+Background/Clutter        [0,0,0]			8
